@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agam Singh's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS.
 
-First, run the development server:
+![Portfolio Preview](public/assets/images/Next-Commerce.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Modern Design**: Clean, responsive layout with smooth animations
+- **Project Showcase**: Detailed presentation of key projects
+- **Tech Stack Visualization**: Interactive display of technical skills
+- **Contact Form**: Integrated form with Formspree for easy communication
+- **Dark Theme**: Elegant dark mode with red accents
+- **Responsive**: Fully responsive design for all devices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Projects Featured
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. ChatSphere
+- Advanced chatbot framework for college environments
+- Custom TF-IDF vectorization and ML classifiers
+- Published on Ready Tensor platform
+- Tech Stack: Python, Flask, Docker, GCP, ReactJS, Vite
 
-## Learn More
+### 2. NextCommerce
+- Modern e-commerce platform with intelligent recommendations
+- Product suggestions based on user behavior
+- Responsive design with cart management
+- Tech Stack: C++, Next.js, React, Express, MongoDB
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Languages
+- TypeScript/JavaScript
+- Python
+- C++
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+- GSAP Animations
 
-## Deploy on Vercel
+### Backend
+- Node.js
+- Express
+- Flask
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### AI/ML & Data
+- TensorFlow
+- PyTorch
+- Scikit-learn
+- Pandas
+- NumPy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tools & DevOps
+- Git
+- Docker
+- VS Code
+- Linux
+- Jupyter
+
+## 🏃‍♂️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Agam77055/portfolio.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   cd portfolio
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+
+## 📝 Contact
+
+- **Email**: agamhsingh@gmail.com
+- **LinkedIn**: [Agam Harpreet Singh](https://linkedin.com/in/agam-harpreet-singh)
+- **GitHub**: [Agam77055](https://github.com/Agam77055)
+- **LeetCode**: [Agam770](https://leetcode.com/u/Agam770/)
+
+## 🎨 Customization
+
+1. **Update Personal Info**: Modify `src/app/page.tsx` with your information
+2. **Add Projects**: Update the projects section with your own work
+3. **Modify Tech Stack**: Edit the tech stack section in the same file
+4. **Change Theme**: Customize colors in `tailwind.config.js`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Made with ❤️ by Agam Singh
