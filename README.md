@@ -1,4 +1,4 @@
-# Agam Singh's Portfolio
+# Agam Harpreet Singh's Portfolio
 
 A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS.
 
@@ -97,4 +97,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by Agam Singh
+Made with ❤️ by Agam Harpreet Singh
