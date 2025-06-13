@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS.
 
-![Portfolio Preview](public/assets/images/Next-Commerce.png)
-
 ## 🌟 Features
 
 - **Modern Design**: Clean, responsive layout with smooth animations
