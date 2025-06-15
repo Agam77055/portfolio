@@ -419,7 +419,7 @@ export default function Home() {
                       } else {
                         throw new Error('Failed to send message');
                       }
-                    } catch (error) {
+                    } catch {
                       // Error handling
                       button.textContent = 'Failed to send. Try again.';
                       button.style.backgroundColor = 'rgba(239, 68, 68, 0.2)';
