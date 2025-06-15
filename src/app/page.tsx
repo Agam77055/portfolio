@@ -26,7 +26,7 @@ export default function Home() {
               <div className="flex-1 text-left">
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-5xl text-white/80">
-                    Hi, I'm
+                    Hi, I&apos;m
                   </h1>
                   <h2 className="text-6xl md:text-6xl font-bold text-white">
                     Agam Harpreet Singh
@@ -73,7 +73,7 @@ export default function Home() {
               
               <div className="max-w-9xl mx-auto text-left bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
                 <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-6">
-                  I'm a <span className="text-red-400 font-semibold">BTech student in AI & Data Science</span> at IIT Jodhpur, 
+                  I&apos;m a <span className="text-red-400 font-semibold">BTech student in AI & Data Science</span> at IIT Jodhpur, 
                   passionate about building the future through technology. I love turning complex problems into elegant solutions.
                 </p>
                 
@@ -84,7 +84,7 @@ export default function Home() {
                   I believe in learning by building and sharing knowledge with the community.
                 </p>
                   <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-                    When I'm not coding, you'll find me exploring new tech trends, experimenting with side projects, 
+                    When I&apos;m not coding, you&apos;ll find me exploring new tech trends, experimenting with side projects, 
                     or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">F1 racing</span> and 
                     love to do <span className="text-red-400 font-medium">Gaming</span>. Always excited about the next breakthrough in AI and its real-world applications.
                  </p>
@@ -369,7 +369,7 @@ export default function Home() {
                 Get In <span className="text-red-400">Touch</span>
               </h2>
               <p className="text-lg md:text-xl text-white/70">
-                I'm always interested in hearing about new opportunities and connecting with fellow developers.
+                I&apos;m always interested in hearing about new opportunities and connecting with fellow developers.
               </p>
             </div>
 
@@ -493,7 +493,7 @@ export default function Home() {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div className="bg-black/30 rounded-2xl p-8 border border-red-500/20">
-                  <h3 className="text-2xl font-bold text-white mb-6">Let's connect</h3>
+                  <h3 className="text-2xl font-bold text-white mb-6">Let&apos;s connect</h3>
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
                       <div>
