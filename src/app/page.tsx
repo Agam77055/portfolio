@@ -49,12 +49,13 @@ export default function Home() {
 
               {/* Right side - Static Photo */}
               <div className="flex-1 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
-                <div className="relative w-[280px] aspect-[4/5] sm:w-[350px] md:w-[450px] lg:w-[500px]">
+                <div className="relative w-[350px] sm:w-[380px] md:w-[450px] lg:w-[500px] aspect-[4/5]">
                   <Image
                     src="/assets/images/IMG_7656.jpg"
                     alt="Agam Harpreet Singh"
                     fill
-                    className="object-cover rounded-lg"
+                    sizes="(max-width: 640px) 300px, (max-width: 768px) 350px, (max-width: 1024px) 450px, 500px"
+                    className="object-cover rounded-lg shadow-2xl"
                     priority
                   />
                 </div>
