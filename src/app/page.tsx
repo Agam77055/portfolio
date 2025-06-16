@@ -19,21 +19,21 @@ export default function Home() {
       <Navbar />
       <main className="min-h-screen bg-black">
         {/* Home Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center px-4">
+        <section id="home" className="min-h-screen flex items-center justify-center px-4 py-12 md:py-0">
           <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-16">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
               {/* Left side - Name and Roles */}
-              <div className="flex-1 text-left">
-                <div className="space-y-4">
-                  <h1 className="text-4xl md:text-5xl text-white/80">
+              <div className="flex-1 text-left order-2 md:order-1">
+                <div className="space-y-2 md:space-y-4">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl text-white/80">
                     Hi, I&apos;m
                   </h1>
-                  <h2 className="text-6xl md:text-6xl font-bold text-white">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
                     Agam Harpreet Singh
                   </h2>
                 </div>
                 
-                <p className="text-xl md:text-2xl text-white/70 mb-8 mt-8">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/70 mb-6 md:mb-8 mt-6 md:mt-8">
                   <CyclingTypingAnimation 
                     texts={roles}
                     className="text-white"
@@ -42,21 +42,21 @@ export default function Home() {
                     pauseDuration={2000}
                   />
                 </p>
-                <div className="text-lg text-white/60">
+                <div className="text-base md:text-lg text-white/60">
                   Welcome to my portfolio
                 </div>
               </div>
 
               {/* Right side - Static Photo */}
-              <div className="flex-1 flex justify-center">
-                <div className="relative w-[500px] h-[650px] md:w-[600px] md:h-[750px]">
-        <Image
+              <div className="flex-1 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+                <div className="relative w-[280px] aspect-[4/5] sm:w-[350px] md:w-[450px] lg:w-[500px]">
+                  <Image
                     src="/assets/images/IMG_7656.jpg"
                     alt="Agam Harpreet Singh"
                     fill
                     className="object-cover rounded-lg"
-          priority
-        />
+                    priority
+                  />
                 </div>
               </div>
             </div>
@@ -64,45 +64,45 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="min-h-screen flex items-center justify-center px-4 py-20">
+        <section id="about" className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-7xl font-bold text-white mb-12 leading-tight">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8 md:mb-12 leading-tight">
                 <span className="text-red-400">About </span> Me
               </h2>
               
-              <div className="max-w-9xl mx-auto text-left bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
-                <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-6">
+              <div className="max-w-9xl mx-auto text-left bg-white/5 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed mb-4 md:mb-6">
                   I&apos;m a <span className="text-red-400 font-semibold">BTech student in AI & Data Science</span> at IIT Jodhpur, 
                   passionate about building the future through technology. I love turning complex problems into elegant solutions.
                 </p>
                 
-                <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-6">
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-4 md:mb-6">
                   Currently diving deep into <span className="text-white font-medium">Machine Learning algorithms</span>, 
                   <span className="text-white font-medium"> Full-Stack Development</span>, and 
                   <span className="text-white font-medium"> Modern Web Technologies</span>. 
                   I believe in learning by building and sharing knowledge with the community.
                 </p>
-                  <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-                    When I&apos;m not coding, you&apos;ll find me exploring new tech trends, experimenting with side projects, 
-                    or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">F1 racing</span> and 
-                    love to do <span className="text-red-400 font-medium">Gaming</span>. Always excited about the next breakthrough in AI and its real-world applications.
-                 </p>
+                <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
+                  When I&apos;m not coding, you&apos;ll find me exploring new tech trends, experimenting with side projects, 
+                  or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">F1 racing</span> and 
+                  love to do <span className="text-red-400 font-medium">Gaming</span>. Always excited about the next breakthrough in AI and its real-world applications.
+                </p>
               </div>
             </div>
 
             {/* Tech Stack */}
-            <div className="mt-20">
-              <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            <div className="mt-16 md:mt-20">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8 md:mb-12">
                 My <span className="text-red-400">Tech Stack</span>
               </h3>
               
               {/* Tech Categories Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 md:gap-6">
                 {/* Languages */}
-                <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                  <h4 className="text-lg font-bold text-red-400 mb-4 text-center">Languages</h4>
-                  <div className="space-y-3">
+                <div className="bg-black/30 rounded-2xl p-4 md:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                  <h4 className="text-base md:text-lg font-bold text-red-400 mb-3 md:mb-4 text-center">Languages</h4>
+                  <div className="space-y-2 md:space-y-3">
                     {[
                       { name: "C", icon: "devicon-c-plain" },
                       { name: "C++", icon: "devicon-cplusplus-plain" },                      
@@ -111,9 +111,9 @@ export default function Home() {
                       { name: "JavaScript", icon: "devicon-javascript-plain colored" },
                       { name: "TypeScript", icon: "devicon-typescript-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
-                        <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
-                        <span className="text-white text-sm font-medium">{tech.name}</span>
+                      <div key={tech.name} className="flex items-center space-x-2 md:space-x-3 p-1.5 md:p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                        <i className={`${tech.icon} text-lg md:text-xl flex-shrink-0`}></i>
+                        <span className="text-white text-xs md:text-sm font-medium">{tech.name}</span>
                       </div>
                     ))}
                   </div>
@@ -218,144 +218,200 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-16 text-center">
+        <section id="projects" className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 md:py-20">
+          <div className="max-w-7xl mx-auto w-full">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-12 md:mb-16 text-center">
               My <span className="text-red-400">Projects</span>
             </h2>
             
-            <div className="space-y-20">
+            <div className="space-y-16 md:space-y-20">
               {/* Chat-Sphere Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Project Preview */}
-                 <div className="order-2 lg:order-1">
-                   <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                     {/* Project Image */}
-                     <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-            <Image
-                         src="/assets/images/Chat-Sphere.png" 
-                         alt="ChatSphere AI Chatbot Interface" 
-                         width={600} 
-                         height={400} 
-                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                       />
-                     </div>
-                     
-                     {/* Project Info */}
-                     <div className="text-center">
-                       <h4 className="text-white/80 text-lg font-medium mb-2">AI Chatbot Interface</h4>
-                       <p className="text-white/60 text-sm">Interactive chat interface with NLP capabilities</p>
-                       <div className="mt-3">
-                         <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                           ML Project
-                         </span>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
                 {/* Project Info */}
-                <div className="order-1 lg:order-2">
-                                     <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">ChatSphere</h3>
-                   <p className="text-lg md:text-xl text-white/70 mb-8 leading-relaxed">
-                     Successfully crafted and published an advanced chatbot framework from scratch using Python with enhanced NLP capabilities, 
-                     specifically designed for college environments. Features custom TF-IDF vectorization, multiple ML classifiers 
-                     (Random Forest achieving 91.11% accuracy), and containerized deployment. Published on Ready Tensor platform.
-                   </p>
-
-                   <div className="mb-8">
-                     <h4 className="text-red-400 font-bold text-lg mb-4 uppercase tracking-wider">Project Info</h4>
-                     <div className="space-y-4">
-                       <div className="flex justify-between items-center py-3 border-b border-white/10">
-                         <span className="text-white/70">Year</span>
-                         <span className="text-white font-medium">2025</span>
-                       </div>
-                       <div className="flex justify-between items-center py-3 border-b border-white/10">
-                         <span className="text-white/70">Tech Stack</span>
-                         <span className="text-white font-medium">Python, Flask, Docker, GCP, ReactJS, Vite</span>
-                       </div>
-                     </div>
-                   </div>
-
-                   <div className="flex flex-wrap gap-3">
-                     <a href="https://prml-project-tan.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2 text-sm">
-                       LIVE DEMO <span className="text-lg">↗</span>
-                     </a>
-                     <a href="https://github.com/Agam77055/ChatSphere" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2 text-sm">
-                       GITHUB <i className="devicon-github-original text-lg"></i>
-                     </a>
-                     <a href="https://app.readytensor.ai/publications/pVfa3uz9TrrB" target="_blank" rel="noopener noreferrer" className="bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-blue-500/30 flex items-center gap-2 text-sm">
-                       PUBLICATION <span className="text-lg">📄</span>
-                     </a>
-                   </div>
-                </div>
-              </div>
-
-              {/* NextCommerce Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Project Info */}
-                <div className="order-1">
-                  <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">NextCommerce</h3>
-                                     <p className="text-lg md:text-xl text-white/70 mb-8 leading-relaxed">
-                     Built a modern e-commerce website with intelligent product recommendation system that suggests products 
-                     based on user purchase history and recently viewed items. Features responsive design, cart management, 
-                     user authentication with Google integration, and optimized performance using Next.js and TypeScript.
-                   </p>
-
-                  <div className="mb-8">
-                    <h4 className="text-red-400 font-bold text-lg mb-4 uppercase tracking-wider">Project Info</h4>
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
-                        <span className="text-white/70">Year</span>
-                        <span className="text-white font-medium">2024</span>
+                <div className="order-1 px-2 sm:px-4">
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">ChatSphere</h3>
+                  
+                  {/* Project Preview - Moved here for mobile */}
+                  <div className="lg:hidden mb-6">
+                    <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                      {/* Project Image */}
+                      <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
+                        <Image
+                          src="/assets/images/Chat-Sphere.png" 
+                          alt="ChatSphere AI Chatbot Interface" 
+                          width={600} 
+                          height={400} 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
-                        <span className="text-white/70">Tech Stack</span>
-                        <span className="text-white font-medium">C++, Next.js, React, Express, MongoDB</span>
-                      </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
-                        <span className="text-white/70">Key Feature</span>
-                        <span className="text-white font-medium">Product Recommendations using DSA</span>
+                      
+                      {/* Project Info */}
+                      <div className="text-center">
+                        <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">AI Chatbot Interface</h4>
+                        <p className="text-white/60 text-xs sm:text-sm">Interactive chat interface with NLP capabilities</p>
+                        <div className="mt-3">
+                          <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
+                            ML Project
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <a href="https://ecommerce-website-seven-green.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-6 py-3 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2">
-                      LIVE DEMO <span className="text-lg">↗</span>
+                  <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
+                    Successfully crafted and published an advanced chatbot framework from scratch using Python with enhanced NLP capabilities, 
+                    specifically designed for college environments. Features custom TF-IDF vectorization, multiple ML classifiers 
+                    (Random Forest achieving 91.11% accuracy), and containerized deployment. Published on Ready Tensor platform.
+                  </p>
+
+                  <div className="mb-6 md:mb-8">
+                    <h4 className="text-red-400 font-bold text-base sm:text-lg mb-3 md:mb-4 uppercase tracking-wider">Project Info</h4>
+                    <div className="space-y-3 md:space-y-4">
+                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
+                        <span className="text-white/70 text-sm sm:text-base">Year</span>
+                        <span className="text-white font-medium text-sm sm:text-base">2025</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
+                        <span className="text-white/70 text-sm sm:text-base">Tech Stack</span>
+                        <span className="text-white font-medium text-sm sm:text-base">Python, Flask, Docker, GCP, ReactJS, Vite</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    <a href="https://prml-project-tan.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2 text-xs sm:text-sm">
+                      LIVE DEMO <span className="text-base sm:text-lg">↗</span>
                     </a>
-                    <a href="https://github.com/Agam77055/NextCommerce" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
-                      GITHUB <i className="devicon-github-original text-lg"></i>
-          </a>
-        </div>
+                    <a href="https://github.com/Agam77055/ChatSphere" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2 text-xs sm:text-sm">
+                      GITHUB <i className="devicon-github-original text-base sm:text-lg"></i>
+                    </a>
+                    <a href="https://app.readytensor.ai/publications/pVfa3uz9TrrB" target="_blank" rel="noopener noreferrer" className="bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-blue-500/30 flex items-center gap-2 text-xs sm:text-sm">
+                      PUBLICATION <span className="text-base sm:text-lg">📄</span>
+                    </a>
+                  </div>
                 </div>
 
-                {/* Project Preview */}
-                 <div className="order-2">
-                   <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                     {/* Project Image */}
-                     <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-                       <Image 
-                         src="/assets/images/Next-Commerce.png" 
-                         alt="NextCommerce E-commerce Platform" 
-                         width={600} 
-                         height={400} 
-                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                       />
-                     </div>
-                     
-                     {/* Project Info */}
-                     <div className="text-center">
-                       <h4 className="text-white/80 text-lg font-medium mb-2">E-commerce Platform</h4>
-                       <p className="text-white/60 text-sm">Modern shopping experience with cart functionality</p>
-                       <div className="mt-3">
-                         <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                           Full-Stack Project
-                         </span>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+                {/* Project Preview - Desktop only */}
+                <div className="hidden lg:block order-2">
+                  <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                    {/* Project Image */}
+                    <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
+                      <Image
+                        src="/assets/images/Chat-Sphere.png" 
+                        alt="ChatSphere AI Chatbot Interface" 
+                        width={600} 
+                        height={400} 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    
+                    {/* Project Info */}
+                    <div className="text-center">
+                      <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">AI Chatbot Interface</h4>
+                      <p className="text-white/60 text-xs sm:text-sm">Interactive chat interface with NLP capabilities</p>
+                      <div className="mt-3">
+                        <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
+                          ML Project
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* NextCommerce Project */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
+                {/* Project Info */}
+                <div className="order-1 px-2 sm:px-4">
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">NextCommerce</h3>
+                  
+                  {/* Project Preview - Moved here for mobile */}
+                  <div className="lg:hidden mb-6">
+                    <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                      {/* Project Image */}
+                      <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
+                        <Image 
+                          src="/assets/images/Next-Commerce.png" 
+                          alt="NextCommerce E-commerce Platform" 
+                          width={600} 
+                          height={400} 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      
+                      {/* Project Info */}
+                      <div className="text-center">
+                        <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">E-commerce Platform</h4>
+                        <p className="text-white/60 text-xs sm:text-sm">Modern shopping experience with cart functionality</p>
+                        <div className="mt-3">
+                          <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
+                            Full-Stack Project
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
+                    Built a modern e-commerce website with intelligent product recommendation system that suggests products 
+                    based on user purchase history and recently viewed items. Features responsive design, cart management, 
+                    user authentication with Google integration, and optimized performance using Next.js and TypeScript.
+                  </p>
+
+                  <div className="mb-6 md:mb-8">
+                    <h4 className="text-red-400 font-bold text-base sm:text-lg mb-3 md:mb-4 uppercase tracking-wider">Project Info</h4>
+                    <div className="space-y-3 md:space-y-4">
+                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
+                        <span className="text-white/70 text-sm sm:text-base">Year</span>
+                        <span className="text-white font-medium text-sm sm:text-base">2024</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
+                        <span className="text-white/70 text-sm sm:text-base">Tech Stack</span>
+                        <span className="text-white font-medium text-sm sm:text-base">C++, Next.js, React, Express, MongoDB</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
+                        <span className="text-white/70 text-sm sm:text-base">Key Feature</span>
+                        <span className="text-white font-medium text-sm sm:text-base">Product Recommendations using DSA</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    <a href="https://ecommerce-website-seven-green.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2 text-xs sm:text-sm">
+                      LIVE DEMO <span className="text-base sm:text-lg">↗</span>
+                    </a>
+                    <a href="https://github.com/Agam77055/NextCommerce" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2 text-xs sm:text-sm">
+                      GITHUB <i className="devicon-github-original text-base sm:text-lg"></i>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Project Preview - Desktop only */}
+                <div className="hidden lg:block order-2">
+                  <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                    {/* Project Image */}
+                    <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
+                      <Image 
+                        src="/assets/images/Next-Commerce.png" 
+                        alt="NextCommerce E-commerce Platform" 
+                        width={600} 
+                        height={400} 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    
+                    {/* Project Info */}
+                    <div className="text-center">
+                      <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">E-commerce Platform</h4>
+                      <p className="text-white/60 text-xs sm:text-sm">Modern shopping experience with cart functionality</p>
+                      <div className="mt-3">
+                        <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
+                          Full-Stack Project
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
