@@ -45,8 +45,56 @@ export default function Home() {
                     pauseDuration={2000}
                   />
                 </p>
+                
+                {/* Social Links & Resume */}
+                <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-6 md:mb-8">
+                  <a 
+                    href="https://github.com/Agam77055" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-md font-medium transition-all duration-200 hover:scale-105 backdrop-blur-sm border border-white/20 hover:border-white/40"
+                  >
+                    <i className="devicon-github-original text-lg"></i>
+                    <span className="text-xs md:text-sm">GitHub</span>
+                  </a>
+                  
+                  <a 
+                    href="https://www.linkedin.com/in/agam-harpreet-singh" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-1.5 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 px-3 py-1.5 rounded-md font-medium transition-all duration-200 hover:scale-105 backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/50"
+                  >
+                    <i className="devicon-linkedin-plain text-lg"></i>
+                    <span className="text-xs md:text-sm">LinkedIn</span>
+                  </a>
+                  
+                  <a 
+                    href="https://leetcode.com/u/Agam770/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-1.5 bg-yellow-600/20 hover:bg-yellow-600/30 text-yellow-300 px-3 py-1.5 rounded-md font-medium transition-all duration-200 hover:scale-105 backdrop-blur-sm border border-yellow-500/30 hover:border-yellow-400/50"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.404-.278l3.501 2.886c.593.49 1.704.49 2.298 0a1.65 1.65 0 0 0 0-2.298s-3.5-2.885-3.5-2.885C14.744.846 13.483 0 13.483 0z"/>
+                    </svg>
+                    <span className="text-xs md:text-sm">LeetCode</span>
+                  </a>
+                  
+                  <a 
+                    href="/assets/resume/Agam_H_Singh-Resume_.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-1.5 bg-red-500/20 hover:bg-red-500/30 text-red-300 px-3 py-1.5 rounded-md font-medium transition-all duration-200 hover:scale-105 backdrop-blur-sm border border-red-500/30 hover:border-red-400/50"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span className="text-xs md:text-sm">Resume</span>
+                  </a>
+                </div>
+                
                 <div className="text-base md:text-lg text-white/60">
-                  Welcome to my portfolio
+                  Welcome to my portfolio. Let&apos;s connect!
                 </div>
               </div>
 
