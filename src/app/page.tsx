@@ -315,8 +315,8 @@ export default function Home() {
                 </div>
                 
                 <p className="text-white/80 leading-relaxed mb-4">
-                  Secured 3rd place at IIT Ropar's tech fest with a <span className="text-red-400 font-semibold">Deepfake Detection Model </span> 
-                  using <span className="text-red-400 font-semibold">EfficientNetB0 architecture</span>. Built a robust image classification system to distinguish between "fake" and "real" images 
+                  Secured 3rd place at IIT Ropar&apos;s tech fest with a <span className="text-red-400 font-semibold">Deepfake Detection Model </span> 
+                  using <span className="text-red-400 font-semibold">EfficientNetB0 architecture</span>. Built a robust image classification system to distinguish between &quot;fake&quot; and &quot;real&quot; images 
                   using advanced transfer learning techniques.
                 </p>
                 

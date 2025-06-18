@@ -218,7 +218,7 @@ export function Projects() {
 
               <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
                 Developed a robust image classification system using <span className="text-red-400 font-semibold">EfficientNetB0 transfer learning architecture </span> 
-                to distinguish between fake and real images. This project secured <span className="text-red-400 font-bold">3rd place at IIT Ropar's tech fest</span>, 
+                to distinguish between fake and real images. This project secured <span className="text-red-400 font-bold">3rd place at IIT Ropar&apos;s tech fest</span>, 
                 demonstrating advanced <span className="text-red-400 font-semibold">deep learning capabilities</span> in detecting deepfakes and manipulated media.
               </p>
 
@@ -258,7 +258,7 @@ export function Projects() {
                     <span className="text-red-300 font-semibold">Achievement</span>
                   </div>
                   <p className="text-white/80 text-sm">
-                    Secured 3rd place at IIT Ropar's tech fest for innovative deepfake detection using EfficientNetB0 architecture.
+                    Secured 3rd place at IIT Ropar&apos;s tech fest for innovative deepfake detection using EfficientNetB0 architecture.
                   </p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export function Projects() {
               </div>
               
               <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
-                Developed a comprehensive data analysis platform for <span className="text-red-400 font-semibold">ISRO's Chandrayaan-2 XRF spectral data </span> 
+                Developed a comprehensive data analysis platform for <span className="text-red-400 font-semibold">ISRO&apos;s Chandrayaan-2 XRF spectral data </span> 
                 processing and visualization. This project secured <span className="text-red-400 font-bold">3rd place at Inter IIT Tech Meet 13.0</span>, 
                 competing against all 23 IITs in India. Implemented Kriging method for data interpolation, 
                 3D lunar surface mapping, and element detection for Calcium & Titanium on the lunar surface.
