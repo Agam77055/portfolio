@@ -3,15 +3,18 @@
 import Image from 'next/image'
 import { Navbar } from '@/components/layout/navbar'
 import { CyclingTypingAnimation } from '@/components/ui/animated-elements'
+import { Projects } from '@/components/sections/Projects'
 
 export default function Home() {
   const roles = [
     "Full Stack Developer",
-    "AI/ML Enthusiast",
-    "Researcher",
+    "AI/ML Researcher",
+    "Data Science Enthusiast", 
+    "Problem Solver",
     "TypeScript Developer",
     "Web Developer",
     "Creative Problem Solver",
+    "Space Technology Enthusiast",
   ]
 
   return (
@@ -79,14 +82,14 @@ export default function Home() {
                 </p>
                 
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed mb-4 md:mb-6">
-                  Currently diving deep into <span className="text-white font-medium">Machine Learning algorithms</span>, 
+                  Currently diving deep into <span className="text-white font-medium">Machine Learning Algorithms</span>, 
                   <span className="text-white font-medium"> Full-Stack Development</span>, and 
                   <span className="text-white font-medium"> Modern Web Technologies</span>. 
                   I believe in learning by building and sharing knowledge with the community.
                 </p>
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
                   When I&apos;m not coding, you&apos;ll find me exploring new tech trends, experimenting with side projects, 
-                  or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">F1 racing</span> and 
+                  or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">Formula 1 racing</span> and 
                   love to do <span className="text-red-400 font-medium">Gaming</span>. Always excited about the next breakthrough in AI and its real-world applications.
                 </p>
               </div>
@@ -168,8 +171,8 @@ export default function Home() {
                       { name: "PyTorch", icon: "devicon-pytorch-original colored" },
                       { name: "Pandas", icon: "devicon-pandas-plain" },
                       { name: "NumPy", icon: "devicon-numpy-plain colored" },
-                                             { name: "Scikit-learn", icon: "devicon-scikitlearn-plain colored" },
-                       { name: "OpenCV", icon: "devicon-opencv-plain colored" },
+                      { name: "Scikit-learn", icon: "devicon-scikitlearn-plain colored" },
+                      { name: "OpenCV", icon: "devicon-opencv-plain colored" },
                     ].map((tech) => (
                       <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
@@ -179,244 +182,188 @@ export default function Home() {
                   </div>
                 </div>
 
-                                 {/* Tools */}
-                 <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                   <h4 className="text-lg font-bold text-red-400 mb-4 text-center">Tools</h4>
-                   <div className="space-y-3">
-                     {[
-                       { name: "VS Code", icon: "devicon-vscode-plain colored" },
-                       { name: "Linux", icon: "devicon-linux-plain" },
-                       { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
-                       { name: "Git", icon: "devicon-git-plain colored" },
-                     ].map((tech) => (
-                       <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
-                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
-                         <span className="text-white text-sm font-medium">{tech.name}</span>
-                       </div>
-                     ))}
-                   </div>
-                 </div>
+                {/* Tools */}
+                <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                  <h4 className="text-lg font-bold text-red-400 mb-4 text-center">Tools</h4>
+                  <div className="space-y-3">
+                    {[
+                      { name: "VS Code", icon: "devicon-vscode-plain colored" },
+                      { name: "Linux", icon: "devicon-linux-plain" },
+                      { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
+                      { name: "Git", icon: "devicon-git-plain colored" },
+                    ].map((tech) => (
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                        <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
+                        <span className="text-white text-sm font-medium">{tech.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-                 {/* DevOps */}
-                 <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                   <h4 className="text-lg font-bold text-red-400 mb-4 text-center">DevOps</h4>
-                   <div className="space-y-3">
-                     {[
-                       { name: "GitHub Actions", icon: "devicon-githubactions-plain colored" },
-                       { name: "Docker", icon: "devicon-docker-plain colored" },
-                     ].map((tech) => (
-                       <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
-                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
-                         <span className="text-white text-sm font-medium">{tech.name}</span>
-                       </div>
-                     ))}
-                   </div>
-                 </div>
+                {/* DevOps */}
+                <div className="bg-black/30 rounded-2xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                  <h4 className="text-lg font-bold text-red-400 mb-4 text-center">DevOps</h4>
+                  <div className="space-y-3">
+                    {[
+                      { name: "GitHub Actions", icon: "devicon-githubactions-plain colored" },
+                      { name: "Docker", icon: "devicon-docker-plain colored" },
+                      { name: "GCP", icon: "devicon-googlecloud-plain" },
+                      { name: "Azure", icon: "devicon-azure-plain colored" },
+                    ].map((tech) => (
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                        <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
+                        <span className="text-white text-sm font-medium">{tech.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Achievements Section */}
+        <section id="achievements" className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12 text-center">
+                My <span className="text-red-400">Achievements</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+              {/* Inter IIT Tech Meet Achievement */}
+              <div className="bg-white/5 rounded-2xl p-6 md:p-8 backdrop-blur-sm border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center border border-red-500/30 flex-shrink-0 overflow-hidden">
+                    <Image
+                      src="/assets/images/INTER_IIT_logo.jpeg"
+                      alt="Achievement Medal"
+                      width={32}
+                      height={32}
+                      className="w-8 h-8 object-cover rounded"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Inter IIT Tech Meet 13.0</h3>
+                    <p className="text-red-400 font-semibold text-sm md:text-base">3rd Place - Chandrayaan-2 Data Analysis</p>
+                  </div>
+                </div>
+                
+                <p className="text-white/90 text-sm md:text-base leading-relaxed mb-4">
+                  Competed against <span className="text-red-400 font-semibold">all 23 IITs</span> in this landmark event hosted by IIT Bombay. 
+                  Our team analyzed <span className="text-red-400 font-semibold">Chandrayaan-2 XRF spectral data</span> to detect elements like Calcium and Titanium on the lunar surface, 
+                  using advanced ML techniques and statistical analysis.
+                </p>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>XRF Spectral Data Analysis & Solar Flare Data Processing</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>Kriging Method for Data Gap Filling & 3D Lunar Surface Mapping</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>Team Collaboration with 8 Members from IIT Jodhpur</span>
+                  </div>
+                </div>
+
+                {/* Certificate Image */}
+                <div className="mb-6">
+                  <div className="bg-black/20 rounded-xl p-4 border border-red-500/20 hover:border-red-400/30 transition-all duration-300">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden border border-red-500/10">
+                      <Image
+                        src="/assets/images/INTER_IIT.jpg"
+                        alt="Inter IIT Tech Meet 13.0 Certificate - 3rd Place"
+                        width={400}
+                        height={300}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <p className="text-center text-white/60 text-xs mt-2">Inter IIT Team Members</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                  <span className="text-white/60 text-sm">2024</span>
+                  <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
+                    Lunar Research
+                  </span>
+                </div>
+              </div>
+
+              {/* IIT Ropar Hackathon Achievement */}
+              <div className="bg-white/5 rounded-2xl p-6 md:p-8 backdrop-blur-sm border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center border border-red-500/30 flex-shrink-0 overflow-hidden">
+                    <Image
+                      src="/assets/images/IITRPR.jpeg"
+                      alt="Achievement Medal"
+                      width={32}
+                      height={32}
+                      className="w-8 h-8 object-cover rounded"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">IIT Ropar Tech Fest</h3>
+                    <p className="text-red-400 font-semibold text-sm md:text-base">3rd Place - Deepfake Detection Model</p>
+                  </div>
+                </div>
+                
+                <p className="text-white/80 leading-relaxed mb-4">
+                  Secured 3rd place at IIT Ropar's tech fest with a <span className="text-red-400 font-semibold">Deepfake Detection Model </span> 
+                  using <span className="text-red-400 font-semibold">EfficientNetB0 architecture</span>. Built a robust image classification system to distinguish between "fake" and "real" images 
+                  using advanced transfer learning techniques.
+                </p>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>EfficientNetB0 Transfer Learning Architecture</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>Image Classification</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-white/70">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    <span>Fake vs Real Image Detection System</span>
+                  </div>
+                </div>
+
+                {/* Certificate Image */}
+                <div className="mb-6">
+                  <div className="bg-black/20 rounded-xl p-4 border border-red-500/20 hover:border-red-400/30 transition-all duration-300">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden border border-red-500/10">
+                      <Image
+                        src="/assets/images/IITRPR_certificate.png"
+                        alt="IIT Ropar Tech Fest Certificate - 3rd Place Deepfake Detection"
+                        width={400}
+                        height={400}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <p className="text-center text-white/60 text-xs mt-2">Certificate of Achievement</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                  <span className="text-white/60 text-sm">2025</span>
+                                      <span className="bg-blue-400/20 text-blue-300 px-3 py-1 rounded-full text-xs border border-blue-400/30">
+                    Deep Learning
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 md:py-20">
-          <div className="max-w-7xl mx-auto w-full">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-12 md:mb-16 text-center">
-              My <span className="text-red-400">Projects</span>
-            </h2>
-            
-            <div className="space-y-16 md:space-y-20">
-              {/* Chat-Sphere Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
-                {/* Project Info */}
-                <div className="order-1 px-2 sm:px-4">
-                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">ChatSphere</h3>
-                  
-                  {/* Project Preview - Moved here for mobile */}
-                  <div className="lg:hidden mb-6">
-                    <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                      {/* Project Image */}
-                      <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-                        <Image
-                          src="/assets/images/Chat-Sphere.png" 
-                          alt="ChatSphere AI Chatbot Interface" 
-                          width={600} 
-                          height={400} 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      
-                      {/* Project Info */}
-                      <div className="text-center">
-                        <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">AI Chatbot Interface</h4>
-                        <p className="text-white/60 text-xs sm:text-sm">Interactive chat interface with NLP capabilities</p>
-                        <div className="mt-3">
-                          <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                            ML Project
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
-                    Successfully crafted and published an advanced chatbot framework from scratch using Python with enhanced NLP capabilities, 
-                    specifically designed for college environments. Features custom TF-IDF vectorization, multiple ML classifiers 
-                    (Random Forest achieving 91.11% accuracy), and containerized deployment. Published on Ready Tensor platform.
-                  </p>
-
-                  <div className="mb-6 md:mb-8">
-                    <h4 className="text-red-400 font-bold text-base sm:text-lg mb-3 md:mb-4 uppercase tracking-wider">Project Info</h4>
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
-                        <span className="text-white/70 text-sm sm:text-base">Year</span>
-                        <span className="text-white font-medium text-sm sm:text-base">2025</span>
-                      </div>
-                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
-                        <span className="text-white/70 text-sm sm:text-base">Tech Stack</span>
-                        <span className="text-white font-medium text-sm sm:text-base">Python, Flask, Docker, GCP, ReactJS, Vite</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 md:gap-3">
-                    <a href="https://prml-project-tan.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2 text-xs sm:text-sm">
-                      LIVE DEMO <span className="text-base sm:text-lg">↗</span>
-                    </a>
-                    <a href="https://github.com/Agam77055/ChatSphere" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2 text-xs sm:text-sm">
-                      GITHUB <i className="devicon-github-original text-base sm:text-lg"></i>
-                    </a>
-                    <a href="https://app.readytensor.ai/publications/pVfa3uz9TrrB" target="_blank" rel="noopener noreferrer" className="bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-blue-500/30 flex items-center gap-2 text-xs sm:text-sm">
-                      PUBLICATION <span className="text-base sm:text-lg">📄</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Project Preview - Desktop only */}
-                <div className="hidden lg:block order-2">
-                  <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                    {/* Project Image */}
-                    <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-                      <Image
-                        src="/assets/images/Chat-Sphere.png" 
-                        alt="ChatSphere AI Chatbot Interface" 
-                        width={600} 
-                        height={400} 
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    
-                    {/* Project Info */}
-                    <div className="text-center">
-                      <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">AI Chatbot Interface</h4>
-                      <p className="text-white/60 text-xs sm:text-sm">Interactive chat interface with NLP capabilities</p>
-                      <div className="mt-3">
-                        <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                          ML Project
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* NextCommerce Project */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
-                {/* Project Info */}
-                <div className="order-1 px-2 sm:px-4">
-                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">NextCommerce</h3>
-                  
-                  {/* Project Preview - Moved here for mobile */}
-                  <div className="lg:hidden mb-6">
-                    <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                      {/* Project Image */}
-                      <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-                        <Image 
-                          src="/assets/images/Next-Commerce.png" 
-                          alt="NextCommerce E-commerce Platform" 
-                          width={600} 
-                          height={400} 
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      
-                      {/* Project Info */}
-                      <div className="text-center">
-                        <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">E-commerce Platform</h4>
-                        <p className="text-white/60 text-xs sm:text-sm">Modern shopping experience with cart functionality</p>
-                        <div className="mt-3">
-                          <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                            Full-Stack Project
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6 md:mb-8 leading-relaxed">
-                    Built a modern e-commerce website with intelligent product recommendation system that suggests products 
-                    based on user purchase history and recently viewed items. Features responsive design, cart management, 
-                    user authentication with Google integration, and optimized performance using Next.js and TypeScript.
-                  </p>
-
-                  <div className="mb-6 md:mb-8">
-                    <h4 className="text-red-400 font-bold text-base sm:text-lg mb-3 md:mb-4 uppercase tracking-wider">Project Info</h4>
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
-                        <span className="text-white/70 text-sm sm:text-base">Year</span>
-                        <span className="text-white font-medium text-sm sm:text-base">2024</span>
-                      </div>
-                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
-                        <span className="text-white/70 text-sm sm:text-base">Tech Stack</span>
-                        <span className="text-white font-medium text-sm sm:text-base">C++, Next.js, React, Express, MongoDB</span>
-                      </div>
-                      <div className="flex justify-between items-center py-2 md:py-3 border-b border-white/10">
-                        <span className="text-white/70 text-sm sm:text-base">Key Feature</span>
-                        <span className="text-white font-medium text-sm sm:text-base">Product Recommendations using DSA</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 md:gap-3">
-                    <a href="https://ecommerce-website-seven-green.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-red-500/20 hover:bg-red-500/30 text-red-300 px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 border border-red-500/30 flex items-center gap-2 text-xs sm:text-sm">
-                      LIVE DEMO <span className="text-base sm:text-lg">↗</span>
-                    </a>
-                    <a href="https://github.com/Agam77055/NextCommerce" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2 text-xs sm:text-sm">
-                      GITHUB <i className="devicon-github-original text-base sm:text-lg"></i>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Project Preview - Desktop only */}
-                <div className="hidden lg:block order-2">
-                  <div className="bg-black/30 rounded-2xl p-4 sm:p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300">
-                    {/* Project Image */}
-                    <div className="rounded-xl mb-4 aspect-video overflow-hidden border border-red-500/20">
-                      <Image 
-                        src="/assets/images/Next-Commerce.png" 
-                        alt="NextCommerce E-commerce Platform" 
-                        width={600} 
-                        height={400} 
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    
-                    {/* Project Info */}
-                    <div className="text-center">
-                      <h4 className="text-white/80 text-base sm:text-lg font-medium mb-2">E-commerce Platform</h4>
-                      <p className="text-white/60 text-xs sm:text-sm">Modern shopping experience with cart functionality</p>
-                      <div className="mt-3">
-                        <span className="inline-block bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs border border-red-500/30">
-                          Full-Stack Project
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Projects />
 
         {/* Contact Section */}
         <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-20">

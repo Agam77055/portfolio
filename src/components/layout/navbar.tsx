@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Achievements', href: '#achievements' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ]
@@ -29,7 +30,7 @@ export const Navbar = () => {
   // Detect which section is currently in view
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'contact']
+      const sections = ['home', 'about', 'achievements', 'projects', 'contact']
       const scrollPosition = window.scrollY + 100 // Offset for navbar height
 
       for (let i = sections.length - 1; i >= 0; i--) {
