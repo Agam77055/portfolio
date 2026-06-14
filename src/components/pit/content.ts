@@ -273,7 +273,6 @@ export const PROJECTS: Project[] = [
     tech: ['Python', 'Flask', 'NLP', 'Docker', 'React'],
     stats: [
       { lbl: 'Type', val: 'ML Project' },
-      { lbl: 'Status', val: 'Live', tone: 'green' },
     ],
     links: [
       { label: 'Live Demo →', href: 'https://prml-project-tan.vercel.app', primary: true },
@@ -291,7 +290,6 @@ export const PROJECTS: Project[] = [
     stats: [
       { lbl: 'Stack', val: 'MERN + TS' },
       { lbl: 'Auth', val: 'Google OAuth' },
-      { lbl: 'Status', val: 'Live', tone: 'green' },
     ],
     links: [
       { label: 'Live Demo →', href: 'https://ecommerce-website-seven-green.vercel.app', primary: true },
