@@ -25,11 +25,12 @@ export const metadata: Metadata = {
   },
   description:
     "I'm Agam Harpreet Singh, a 3rd-year AI & Data Science undergrad at IIT Jodhpur. Explore my projects in full-stack web development, machine learning, DevOps and more.",
+  metadataBase: new URL("https://agamhsingh.com"),
   openGraph: {
     title: "Agam Harpreet Singh | AI & Full-Stack Developer",
     description:
       "I'm Agam Harpreet Singh, a 3rd-year AI & Data Science undergrad at IIT Jodhpur. Explore my projects in full-stack web development, machine learning, DevOps and more.",
-    url: "https://agamhsingh.me",
+    url: "https://agamhsingh.com",
     images: [
       {
         url: "/assets/images/IMG_7656.jpg",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
         alt: "Agam Harpreet Singh - AI & Full-Stack Developer"
       }
     ],
-    siteName: "agamhsingh.me"
+    siteName: "agamhsingh.com"
   },
   twitter: {
     card: "summary_large_image",
