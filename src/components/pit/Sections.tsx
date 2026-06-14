@@ -192,7 +192,7 @@ export function Projects() {
           {PROJECTS.map((p, i) => (
             <article key={p.title} className={`pit-proj pit-reveal${i % 2 === 1 ? ' rev' : ''}`}>
               <div className="pit-proj-img">
-                <span className="pit-proj-num mono">// {p.build}</span>
+                <span className="pit-proj-num mono">{`// ${p.build}`}</span>
                 {p.trophy && <span className="pit-proj-trophy mono">{p.trophy}</span>}
                 {p.img ? (
                   <Image src={p.img} alt={p.title} fill sizes="(max-width: 900px) 100vw, 640px" style={{ objectFit: 'cover', objectPosition: p.imgTop ? 'top' : 'center' }} />
@@ -266,7 +266,7 @@ export function Contact() {
         <div className="pit-contact-grid">
           <form className="pit-form pit-reveal" onSubmit={onSubmit}>
             <div className="pit-form-head">
-              <span className="lbl">// Send a Message</span>
+              <span className="lbl">{'// Send a Message'}</span>
             </div>
             <div className="pit-form-row">
               <div className="pit-field">
@@ -291,17 +291,17 @@ export function Contact() {
 
           <div className="pit-contact-side">
             <div className="pit-ccard pit-reveal">
-              <div className="lbl">// Direct Channel</div>
+              <div className="lbl">{'// Direct Channel'}</div>
               <a className="val" href={`mailto:${SOCIALS.email}`}>{SOCIALS.email}</a>
               <div className="sub">Reply within 24 race hours</div>
             </div>
             <div className="pit-ccard pit-reveal">
-              <div className="lbl">// Pit Wall</div>
+              <div className="lbl">{'// Pit Wall'}</div>
               <a className="val" href={`tel:${SOCIALS.phone.replace(/[^+\d]/g, '')}`}>{SOCIALS.phone}</a>
               <div className="sub">Noida · India · IST (UTC+5:30)</div>
             </div>
             <div className="pit-ccard pit-reveal" style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-              <div className="lbl">// Pit Crew</div>
+              <div className="lbl">{'// Pit Crew'}</div>
               <div className="pit-socials">
                 <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer"><LinkedInIcon /> LinkedIn</a>
                 <a href={SOCIALS.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /> GitHub</a>
