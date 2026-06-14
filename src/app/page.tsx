@@ -138,7 +138,7 @@ export default function Home() {
                 <p className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed">
                   When I&apos;m not coding, you&apos;ll find me exploring new tech trends, experimenting with side projects, 
                   or diving into research papers. In my free time I enjoy watching <span className="text-red-400 font-medium">Formula 1 racing</span> and 
-                  love to do <span className="text-red-400 font-medium">Gaming</span>. Always excited about the next breakthrough in AI and its real-world applications.
+                  love to play <span className="text-red-400 font-medium">Video Games</span>. Always excited about the next breakthrough in AI and its real-world applications.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                       { name: "JavaScript", icon: "devicon-javascript-plain colored" },
                       { name: "TypeScript", icon: "devicon-typescript-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-2 md:space-x-3 p-1.5 md:p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-2 md:space-x-3 p-1.5 md:p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-lg md:text-xl flex-shrink-0`}></i>
                         <span className="text-white text-xs md:text-sm font-medium">{tech.name}</span>
                       </div>
@@ -183,7 +183,7 @@ export default function Home() {
                       { name: "HTML5", icon: "devicon-html5-plain colored" },
                       { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
                         <span className="text-white text-sm font-medium">{tech.name}</span>
                       </div>
@@ -202,7 +202,7 @@ export default function Home() {
                       { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
                       { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
                         <span className="text-white text-sm font-medium">{tech.name}</span>
                       </div>
@@ -222,7 +222,7 @@ export default function Home() {
                       { name: "Scikit-learn", icon: "devicon-scikitlearn-plain colored" },
                       { name: "OpenCV", icon: "devicon-opencv-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
                         <span className="text-white text-sm font-medium">{tech.name}</span>
                       </div>
@@ -240,7 +240,7 @@ export default function Home() {
                       { name: "Jupyter", icon: "devicon-jupyter-plain colored" },
                       { name: "Git", icon: "devicon-git-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
                         <span className="text-white text-sm font-medium">{tech.name}</span>
                       </div>
@@ -258,7 +258,7 @@ export default function Home() {
                       { name: "GCP", icon: "devicon-googlecloud-plain" },
                       { name: "Azure", icon: "devicon-azure-plain colored" },
                     ].map((tech) => (
-                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-500/10 transition-all duration-200">
+                      <div key={tech.name} className="flex items-center space-x-3 p-2 rounded-lg border border-transparent hover:border-red-400/50 transition-all duration-200">
                         <i className={`${tech.icon} text-xl flex-shrink-0`}></i>
                         <span className="text-white text-sm font-medium">{tech.name}</span>
                       </div>
