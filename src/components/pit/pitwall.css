@@ -173,13 +173,29 @@
 .pit-eyebrow { display: inline-flex; align-items: center; gap: 14px; font-family: var(--font-jbmono), monospace; font-size: 11.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-2); margin-bottom: 26px; }
 .pit-eyebrow .bar { width: 60px; height: 1px; background: var(--accent); }
 .pit-hero h1 { font-family: var(--font-bebas), sans-serif; font-size: clamp(46px, 11vw, 170px); font-weight: 400; line-height: 0.88; margin: 0; color: var(--text); }
-.pit-hero h1 .line { display: block; overflow: hidden; }
-.pit-hero h1 .line span { display: inline-block; transform: translateY(110%); animation: pit-rise 0.9s var(--ease-out) forwards; }
+.pit-hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.04em; }
+.pit-hero h1 .line span { display: inline-block; transform: translateY(110%); will-change: transform; }
 .pit-hero h1 .em { font-style: italic; color: var(--accent); }
-@keyframes pit-rise { to { transform: translateY(0); } }
+@keyframes pit-rise { from { transform: translateY(110%); } to { transform: translateY(0); } }
+/* only slide the name up once the loader is done (.start) — like index_3 */
+.pit-hero.start h1 .line span { animation: pit-rise 0.9s var(--ease-out) forwards; }
 .pit-hero.start h1 .line:nth-child(1) span { animation-delay: 0.1s; }
-.pit-hero.start h1 .line:nth-child(2) span { animation-delay: 0.25s; }
-.pit-hero.start h1 .line:nth-child(3) span { animation-delay: 0.4s; }
+.pit-hero.start h1 .line:nth-child(2) span { animation-delay: 0.26s; }
+
+/* the rest of the hero fades up, staggered after the name (index_3 style) */
+.pit-hero .pit-eyebrow,
+.pit-hero .pit-roleline,
+.pit-hero .pit-hero-meta,
+.pit-hero .pit-hero-actions,
+.pit-hero .pit-hero-photo,
+.pit-hero .pit-scroll-cue { opacity: 0; transform: translateY(20px); }
+@keyframes pit-fadeup { to { opacity: 1; transform: translateY(0); } }
+.pit-hero.start .pit-eyebrow     { animation: pit-fadeup 0.8s var(--ease-out) 0.10s forwards; }
+.pit-hero.start .pit-hero-photo  { animation: pit-fadeup 0.9s var(--ease-out) 0.42s forwards; }
+.pit-hero.start .pit-roleline    { animation: pit-fadeup 0.8s var(--ease-out) 0.55s forwards; }
+.pit-hero.start .pit-hero-meta   { animation: pit-fadeup 0.8s var(--ease-out) 0.68s forwards; }
+.pit-hero.start .pit-hero-actions{ animation: pit-fadeup 0.8s var(--ease-out) 0.80s forwards; }
+.pit-hero.start .pit-scroll-cue  { animation: pit-fadeup 0.8s var(--ease-out) 1.0s forwards; }
 
 .pit-hero-meta { margin-top: 42px; display: flex; flex-wrap: wrap; gap: 32px 52px; }
 .pit-meta-block { display: flex; flex-direction: column; gap: 6px; }
@@ -500,5 +516,11 @@
 
 @media (prefers-reduced-motion: reduce) {
   .pit *, .pit *::before, .pit *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-  .pit-hero h1 .line span { transform: none; }
+  .pit-hero h1 .line span,
+  .pit-hero .pit-eyebrow,
+  .pit-hero .pit-roleline,
+  .pit-hero .pit-hero-meta,
+  .pit-hero .pit-hero-actions,
+  .pit-hero .pit-hero-photo,
+  .pit-hero .pit-scroll-cue { transform: none; opacity: 1; }
 }
