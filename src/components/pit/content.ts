@@ -25,7 +25,7 @@ export const SOCIALS = {
 
 export const HERO_META = [
   { label: 'Driver', value: 'Agam Harpreet Singh' },
-  { label: 'Discipline', value: 'AI · Full-Stack · <strong>F1</strong>' },
+  { label: 'Discipline', value: 'AI · Full-Stack' },
   { label: 'Constructor', value: 'IIT Jodhpur · BTech AI & DS' },
   { label: 'Status', value: '<strong>Open to Work</strong>' },
 ]
@@ -275,8 +275,7 @@ export const PROJECTS: Project[] = [
       { lbl: 'Type', val: 'ML Project' },
     ],
     links: [
-      { label: 'Live Demo →', href: 'https://prml-project-tan.vercel.app', primary: true },
-      { label: 'GitHub', href: 'https://github.com/Agam77055/ChatSphere' },
+      { label: 'GitHub →', href: 'https://github.com/Agam77055/ChatSphere', primary: true },
       { label: 'Paper', href: 'https://app.readytensor.ai/publications/pVfa3uz9TrrB' },
     ],
   },
@@ -292,8 +291,7 @@ export const PROJECTS: Project[] = [
       { lbl: 'Auth', val: 'Google OAuth' },
     ],
     links: [
-      { label: 'Live Demo →', href: 'https://ecommerce-website-seven-green.vercel.app', primary: true },
-      { label: 'GitHub', href: 'https://github.com/Agam77055/NextCommerce' },
+      { label: 'GitHub →', href: 'https://github.com/Agam77055/NextCommerce', primary: true },
     ],
   },
   {
