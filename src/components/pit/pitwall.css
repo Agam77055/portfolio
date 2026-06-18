@@ -473,7 +473,8 @@
   .pit section { padding: 72px 0; }
   .pit-hero { padding: 112px 0 56px; }
   .pit-hero h1 { font-size: clamp(64px, 17vw, 132px); line-height: 0.9; }
-  .pit-hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 24px; margin-top: 30px; }
+  .pit-hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 18px; margin-top: 30px; }
+  .pit-meta-value { font-size: 13px; line-height: 1.35; }
   .pit-hero-actions { display: none; }
   .pit-hero-photo { justify-content: center; }
   .pit-hero-photo-frame { max-width: 340px; }

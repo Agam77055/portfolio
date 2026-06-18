@@ -25,8 +25,8 @@ export const SOCIALS = {
 
 export const HERO_META = [
   { label: 'Driver', value: 'Agam Harpreet Singh' },
-  { label: 'Discipline', value: 'AI · Full-Stack' },
-  { label: 'Constructor', value: 'IIT Jodhpur · BTech AI & DS' },
+  { label: 'Discipline', value: 'BTech - AI & Data Science' },
+  { label: 'Constructor', value: 'IIT Jodhpur' },
   { label: 'Status', value: '<strong>Open to Work</strong>' },
 ]
 
