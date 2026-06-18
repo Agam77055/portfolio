@@ -226,7 +226,7 @@
 .pit-ht-now .nrow .k { color: var(--text-3); letter-spacing: 0.16em; text-transform: uppercase; }
 .pit-ht-now .nrow .v { color: var(--text); }
 
-.pit-scroll-cue { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; font-family: var(--font-jbmono), monospace; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-3); z-index: 3; }
+.pit-scroll-cue { position: absolute; bottom: 30px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; font-family: var(--font-jbmono), monospace; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-3); z-index: 3; }
 .pit-scroll-cue .stem { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--accent), transparent); animation: pit-scroll 1.8s ease-in-out infinite; }
 @keyframes pit-scroll { 0% { transform: scaleY(0); transform-origin: top; } 45% { transform: scaleY(1); transform-origin: top; } 55% { transform: scaleY(1); transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 @media (max-width: 1000px) { .pit-hero-inner { grid-template-columns: 1fr; } .pit-htele { max-width: 420px; } }
@@ -477,6 +477,9 @@
   .pit-hero-actions { display: none; }
   .pit-hero-photo { justify-content: center; }
   .pit-hero-photo-frame { max-width: 340px; }
+  /* stack the hero so the scroll cue flows centred below the photo, above the ticker */
+  .pit-hero { flex-direction: column; justify-content: center; }
+  .pit-scroll-cue { position: static; margin: 30px 0 0; }
   .section-title { font-size: clamp(40px, 13vw, 80px); }
   .pit-ach-trophy { width: 64px; }
   .pit-trophy-img { width: 48px; height: 48px; }

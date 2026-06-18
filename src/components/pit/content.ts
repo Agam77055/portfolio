@@ -206,7 +206,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     event: 'AI & Automation Coordinator',
     desc: 'Leading 60+ students at the Robotics Society, IIT Jodhpur — organising workshops and events reaching 300+ participants.',
     tags: ['Leadership', 'Robotics Society', 'Community'],
-    year: '2025–2026', cat: 'Leadership',
+    year: '2025–2026', cat: 'Robotics Society',
   },
   {
     place: '★', sub: 'LEAD', trophy: 'cap',
